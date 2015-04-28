@@ -1,0 +1,6 @@
+<!-- Message header with filter -->
+<span  ng-click="$parent.sort('message')">
+    <span>Message</span>
+    <span class="glyphicon" ng-class="$parent.setSortedColumn('message')"></span>
+</span>
+<input type="text" class="form-control" ng-model="$parent.messageFilter"/>

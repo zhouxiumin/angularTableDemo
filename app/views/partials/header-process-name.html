@@ -1,0 +1,6 @@
+<!-- Process name header with filter -->
+<span ng-click="$parent.sort('processName')">
+    <span>Process Name</span>
+    <span class="glyphicon" ng-class="$parent.setSortedColumn('processName')"></span>
+</span>
+<input type="text" class="form-control" ng-model="$parent.processNameFilter"/>

@@ -1,0 +1,11 @@
+<!-- Date header with filter -->
+<span ng-click="$parent.sort('date')">
+    <span>Message Timestamp</span>
+    <span class="glyphicon" ng-class="$parent.setSortedColumn('date')"></span>
+</span>
+ <span class="input-group">
+    <input type="text" class="form-control" ng-model="$parent.dateFilter" readonly/>
+    <span class="input-group-addon" ng-click="$parent.openModal('sm')">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</span>

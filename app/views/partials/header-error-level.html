@@ -1,0 +1,27 @@
+<!-- Error level header with filter -->
+<span ng-click="$parent.sort('logLevel')">
+    <span>Level</span>
+    <span class="glyphicon" ng-class="$parent.setSortedColumn('logLevel')"></span>
+</span>
+<div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span>{{$parent.errorLevelFilter || 'Select'}}</span>
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <!-- Only show option when the errorLevelFilter is set (for resetting it) -->
+        <li role="presentation" ng-click="$parent.selectLevel('')"
+            ng-show="$parent.errorLevelFilter !== undefined && $parent.errorLevelFilter !== ''">
+            <a role="menuitem" tabindex="-1">
+                <span>CLEAR</span>
+            </a>
+        </li>
+        <!-- Get errorLevelFilter options -->
+        <li role="presentation" ng-repeat="level in $parent.errorLevels" ng-click="$parent.selectLevel(level.value)">
+            <a role="menuitem" tabindex="-1">
+                <span class="glyphicon" ng-class="level.icon"></span>
+                <span>{{ level.value }}</span>
+            </a>
+        </li>
+    </ul>
+</div>
