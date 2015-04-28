@@ -6,7 +6,7 @@
  * @description
  * # addLevelIcons Directive
  * # Adds an icon to the error level cell
- * @returns {Object} unnamed Containing the template for the icon
+ * @returns {Object} Containing the template for the icon
  */
 angular.module('AngularGridApp')
   .directive('errorLevelIcon', function () {

@@ -16,7 +16,7 @@
 angular.module('AngularGridApp')
   .controller('GridCtrl', ['$scope', '$http', '$filter', '$modal', function ($scope, $http, $filter, $modal) {
         /* General table variables */
-        $scope.watcherGroup = ['userNameFilter', 'errorLevelFilter', 'processRunRefFilter', 'processNameFilter', 'messageFilter', 'dateFilterStart', 'dateFilterEnd'];
+        $scope.watcherGroup = ['userNameFilter', 'errorLevelFilter', 'processRunRefFilter', 'processNameFilter', 'messageFilter', 'dateFilterStart', 'dateFilterEnd', 'logEntries'];
         $scope.currentPage = 1;
         $scope.numPerPage = 20;
         $scope.dateFormat = 'yyyy-MM-dd';
@@ -78,6 +78,7 @@ angular.module('AngularGridApp')
 
       /* Watching over data changes when filtering, to update pagination */
       $scope.$watchGroup($scope.watcherGroup, function(newValues){
+          $scope.filteredLogEntries = newValues[7];
           $scope.filteredLogEntries = $filter('filter')($scope.logEntries, {userName: newValues[0],
             logLevel : newValues[1],
             processRunRef: newValues[2],

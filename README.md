@@ -1,9 +1,7 @@
 # Angular Table Demo
 
 
-This application contains a Data table. 
-
-It is implemented with the help of:
+This application contains a Data table. It is implemented with the help of:
  
  * [AngularJs](https://angularjs.org/)
  * [Bootstrap](http://getbootstrap.com/)
