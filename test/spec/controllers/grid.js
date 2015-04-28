@@ -171,5 +171,4 @@ describe('Controller: GridCtrl', function () {
 
     });
   });
-
 });

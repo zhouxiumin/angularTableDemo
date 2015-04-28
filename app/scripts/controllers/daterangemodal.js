@@ -12,8 +12,8 @@
  * Controller of the AngularGridApp
  */
 angular.module('AngularGridApp')
-  .controller('DaterangemodalCtrl', ['$scope', '$modalInstance', 'dateRange',
-            function ($scope, $modalInstance, dateRange) {
+  .controller('DaterangemodalCtrl', ['$scope', '$modalInstance', '$filter', 'dateRange',
+            function ($scope, $modalInstance, $filter, dateRange) {
 
         /* Modal variables */
         $scope.dateFormat = 'yyyy-MM-dd';
@@ -33,6 +33,8 @@ angular.module('AngularGridApp')
         };
         /* Button "Cancel" */
         $scope.cancel = function () {
+            $scope.clearDateFilterStart();
+            $scope.clearDateFilterEnd();
             $modalInstance.dismiss('cancel');
         };
         /* Button "Clear" */

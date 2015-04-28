@@ -120,6 +120,7 @@ angular.module('AngularGridApp')
                 $scope.dateFilterStart = undefined;
                 $scope.dateFilterEnd = undefined;
                 $scope.dateFilter = '';
+                $scope.canceled = true;
             }
         });
       };

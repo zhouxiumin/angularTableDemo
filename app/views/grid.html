@@ -29,7 +29,7 @@
                             processName: processNameFilter,
                             message: messageFilter} |
                     filter : dateRange:dateFilterStart:dateFilterEnd |
-                    filter: paginate |
+                    filter : paginate |
                     orderBy:sorting.column:sorting.descending">
 
                     <td class="text-center">{{entry.userName}}</td>
@@ -40,7 +40,15 @@
                     <td class="text-center">{{entry.date}}</td>
                     <td class="text-center">{{entry.processRunRef}}</td>
                     <td class="text-center">{{entry.processName}}</td>
-                    <td class="message-content" popover-animation="false" popover="{{entry.message}}" popover-placement="top" popover-trigger="click">{{entry.message | truncateString}}</td>
+                  <!-- Clicking on the truncated message will show a tooltip containing the whole message.
+                       Clicking the second time on it will hide the open tooltip. -->
+                    <td class="message-content"
+                        popover-animation="false"
+                        popover="{{entry.message}}"
+                        popover-placement="top"
+                        popover-trigger="click">
+                      {{entry.message | truncateString}}
+                    </td>
                 </tr>
             </table>
         </div>
