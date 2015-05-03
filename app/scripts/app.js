@@ -32,4 +32,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+    .config(['$compileProvider', function($compileProvider){ //debug disabled for production
+      $compileProvider.debugInfoEnabled(false);
+    }]);

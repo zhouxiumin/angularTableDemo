@@ -1,0 +1,3005 @@
+{
+    "data": [
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 14:49:40",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042414493990200002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 14:49:40",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042414493990200002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 14:43:56",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042414435573600002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 14:43:56",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042414435573600002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 13:26:19",
+            "processName": "LOAD_SAP_MD",
+            "userName": "admin",
+            "processRunRef": "2015042413261873000012",
+            "message": "FAILURE executing LOAD_SAP_MD",
+            "hasErrorLogs": true,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 13:26:19",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "admin",
+            "processRunRef": "2015042413261875500015",
+            "message": "UnsupportedOperationException executing process LOAD_SAP_BOM: Handling InMessage not supported by current route with MessageExchangeOutOnlyCollectImpl",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 13:26:19",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "admin",
+            "processRunRef": "2015042413261875500015",
+            "message": "FAILURE executing LOAD_SAP_BOM",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 13:26:19",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "admin",
+            "processRunRef": "2015042413261875500015",
+            "message": "LOAD_SAP_BOM parameters: Message = [Out={\n\tname = null\n\tstatus = true\n\tproperties=\n\t\tmsgtype = Message\n\t\trequest.hostname = ws-266.corp.e2open.com\n\texception = null\n\tdata = null\n}], PreProcessHook = null, PostProcessHook = null, DataFilter = null, SourceDatasetPattern = PRODBOM\\.TXT, ColumnValueMap = null, AllowEmptySource = true, DeleteTableContents = true, DeletionColumns = [], CaseSensitiveColumns = false, ColumnMatchStrategy = BEST_MATCH, DestinationTable = BOM, ColumnSeparator = |, ColumnMapping = [], ConstantValues = [(DISCONTINUED_FLAG,0)], BatchMemoryReadSize = 100000, SpecialCharacterSensitiveColumns = false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 13:26:18",
+            "processName": "LOAD_SAP_MD",
+            "userName": "admin",
+            "processRunRef": "2015042413261873000012",
+            "message": "LOAD_SAP_MD parameters: Message = [Out={\n\tname = null\n\tstatus = true\n\tproperties=\n\t\tmsgtype = Message\n\t\trequest.hostname = ws-266.corp.e2open.com\n\texception = null\n\tdata = null\n}], FailOnError = true, ProcessList = [[Process = LOAD_SAP_BOM|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@1e3157b0]], [Process = LOAD_SAP_CAPACITY_PROFILE|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@33834822]], [Process = LOAD_SAP_CUSTOMER|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@732eafb1]], [Process = LOAD_SAP_FCAL|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@3f8b4939]], [Process = LOAD_SAP_HCAL|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@1fd69b44]], [Process = LOAD_SAP_INFO_RECORD|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@6cf2d4d0]], [Process = LOAD_SAP_ITEM|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@1f4c13d6]], [Process = LOAD_SAP_PLANT|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@7b729f33]], [Process = LOAD_SAP_QUOTA|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@668a2455]], [Process = LOAD_SAP_ROC|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@11056d5b]], [Process = LOAD_SAP_ROUTING|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@296a13c9]], [Process = LOAD_SAP_SRULES|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@1f8c2b90]], [Process = LOAD_SAP_VENDOR|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@5fb0c727]], [Process = LOAD_SAP_WORK_CENTER|Forward Cascaded = false|Reverse Cascaded = false|DeferredStart = 0|Callback = FALSE (Synchronous)|Temporary Append Mode = KEEP_ORIGINAL|ProcessParameter = [com.e2open.datahub.core.process.MessageLoadParameter@23941777]]], PreProcessHook = null, PostProcessHook = null",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 13:24:08",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "admin",
+            "processRunRef": "2015042413240867200009",
+            "message": "FAILURE executing LOAD_SAP_ROC",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 13:24:08",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "admin",
+            "processRunRef": "2015042413240867200009",
+            "message": "UnsupportedOperationException executing process LOAD_SAP_ROC: Handling InMessage not supported by current route with MessageExchangeOutOnlyDirectImpl",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 13:24:08",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "admin",
+            "processRunRef": "2015042413240867200009",
+            "message": "LOAD_SAP_ROC parameters: Message = [Out=<NULL>], PreProcessHook = null, PostProcessHook = null, DataFilter = null, SourceDatasetPattern = ROC\\.TXT, ColumnValueMap = null, AllowEmptySource = true, DeleteTableContents = true, DeletionColumns = [], CaseSensitiveColumns = false, ColumnMatchStrategy = BEST_MATCH, DestinationTable = ROC, ColumnSeparator = |, ColumnMapping = [], ConstantValues = [(DISCONTINUED_FLAG,0)], BatchMemoryReadSize = 100000, SpecialCharacterSensitiveColumns = false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 13:23:42",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042413234192200002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 13:23:42",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042413234192200002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 13:23:42",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042413234192200002",
+            "message": "MONITOR_MESSAGES parameters: AutoStart = true, PreProcessHook = null, PostProcessHook = null",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 12:02:48",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "admin",
+            "processRunRef": "2015042412024872700009",
+            "message": "FAILURE executing LOAD_SAP_SRULES",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 12:02:48",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "admin",
+            "processRunRef": "2015042412024872700009",
+            "message": "UnsupportedOperationException executing process LOAD_SAP_SRULES: Handling InMessage not supported by current route with MessageExchangeOutOnlyDirectImpl",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 12:02:48",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "admin",
+            "processRunRef": "2015042412024872700009",
+            "message": "LOAD_SAP_SRULES parameters: Message = [Out=<NULL>], DataFilter = null, SourceDatasetPattern = SRULES\\.TXT, ColumnValueMap = null, AllowEmptySource = true, DeleteTableContents = true, DeletionColumns = [], CaseSensitiveColumns = false, ColumnMatchStrategy = BEST_MATCH, DestinationTable = SRULES, ColumnSeparator = |, ColumnMapping = [], ConstantValues = [(DISCONTINUED_FLAG,0)], BatchMemoryReadSize = 100000, PreProcessHook = null, PostProcessHook = null, SpecialCharacterSensitiveColumns = false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-24 12:02:18",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042412021821200002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-24 12:02:18",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042412021821200002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 12:02:18",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042412021821200002",
+            "message": "MONITOR_MESSAGES parameters: AutoStart = true, PreProcessHook = null, PostProcessHook = null",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 11:52:17",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "admin",
+            "processRunRef": "2015042411521721400009",
+            "message": "FAILURE executing LOAD_SAP_BOM",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 11:52:17",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "admin",
+            "processRunRef": "2015042411521721400009",
+            "message": "UnsupportedOperationException executing process LOAD_SAP_BOM: Handling InMessage not supported by current route with MessageExchangeOutOnlyDirectImpl",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 11:52:17",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "admin",
+            "processRunRef": "2015042411521721400009",
+            "message": "LOAD_SAP_BOM parameters: Message = [Out=<NULL>], PreProcessHook = null, PostProcessHook = null, SourceDatasetPattern = PRODBOM\\.TXT, ColumnValueMap = null, AllowEmptySource = true, DeleteTableContents = true, DeletionColumns = [Lcom.icon.util.Tuple;@5df9929f, CaseSensitiveColumns = false, ColumnMatchStrategy = BEST_MATCH, DestinationTable = BOM, ColumnSeparator = |, ColumnMapping = [Lcom.icon.util.Tuple;@2c0934ec, ConstantValues = [Lcom.icon.util.Tuple;@1071888a, BatchMemoryReadSize = 100000, DataFilter = null, SpecialCharacterSensitiveColumns = false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-24 11:50:11",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042411501062700002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 11:50:11",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042411501062700002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 11:50:10",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042411501062700002",
+            "message": "MONITOR_MESSAGES parameters: AutoStart = true, PreProcessHook = null, PostProcessHook = null",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 10:53:26",
+            "processName": "RESET_APODP_B2BC_PROCESS",
+            "userName": "admin",
+            "processRunRef": "2015042410525599100012",
+            "message": "FAILURE executing RESET_APODP_B2BC_PROCESS",
+            "hasErrorLogs": true,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 10:53:26",
+            "processName": "RESET_APODP_B2BC_PROCESS",
+            "userName": "admin",
+            "processRunRef": "2015042410525599100012",
+            "message": "Empty data packet!",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 10:53:08",
+            "processName": "RESET_APODP_B2BC_PROCESS",
+            "userName": "admin",
+            "processRunRef": "2015042410525599100012",
+            "message": "Sending updated properties as apodpconfig-1.0 for process MONITOR_FCST01 ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 10:52:56",
+            "processName": "RESET_APODP_B2BC_PROCESS",
+            "userName": "admin",
+            "processRunRef": "2015042410525599100012",
+            "message": "RESET_APODP_B2BC_PROCESS parameters: ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 10:50:41",
+            "processName": "RESET_APODP_B2BC_PROCESS",
+            "userName": "admin",
+            "processRunRef": "2015042410504099800009",
+            "message": "FAILURE executing RESET_APODP_B2BC_PROCESS",
+            "hasErrorLogs": true,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-24 10:50:41",
+            "processName": "RESET_APODP_B2BC_PROCESS",
+            "userName": "admin",
+            "processRunRef": "2015042410504099800009",
+            "message": "Empty data packet!",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 10:50:41",
+            "processName": "RESET_APODP_B2BC_PROCESS",
+            "userName": "admin",
+            "processRunRef": "2015042410504099800009",
+            "message": "Sending updated properties as apodpconfig-1.0 for process MONITOR_FCST01 ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 10:50:41",
+            "processName": "RESET_APODP_B2BC_PROCESS",
+            "userName": "admin",
+            "processRunRef": "2015042410504099800009",
+            "message": "RESET_APODP_B2BC_PROCESS parameters: ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 10:45:11",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042410451049700002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 10:45:11",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042410451049700002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-24 10:45:10",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042410451049700002",
+            "message": "MONITOR_MESSAGES parameters: ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-24 10:41:20",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042410412065500002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-24 10:41:20",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042410412065500002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-24 10:19:42",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042410194191100002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-24 10:19:42",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042410194191100002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 21:53:25",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042321532477600002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-23 21:53:25",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042321532477600002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-23 15:56:43",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "FAILURE executing SAP_TO_E2PR_CALENDAR01",
+            "hasErrorLogs": true,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-23 15:56:43",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Setting ClientData message caused exception: No equivalent message set up available for message key calendar01-1.0 to be processed using direction SEND. Message: {\n\tname = calendar01.txt\n\tstatus = true\n\tproperties=\n\t\tdataType = calendar01\n\t\tmsgtype = Message\n\t\trequest.hostname = ws-266.corp.e2open.com\n\t\tversion = 1.0\n\texception = null\n\tdata = SNAPSHOT_DATE|DISCONTINUED_FLAG|CALENDAR_NAME|CALENDAR_DATE|WORK_FLAG\r\n2015-04-23 15:56:34|0|JP|2002\n}",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-23 15:56:43",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Error transforming CALENDAR01: Setting ClientData message caused exception: No equivalent message set up available for message key calendar01-1.0 to be processed using direction SEND. Message: {\n\tname = calendar01.txt\n\tstatus = true\n\tproperties=\n\t\tdataType = calendar01\n\t\tmsgtype = Message\n\t\trequest.hostname = ws-266.corp.e2open.com\n\t\tversion = 1.0\n\texception = null\n\tdata = SNAPSHOT_DATE|DISCONTINUED_FLAG|CALENDAR_NAME|CALENDAR_DATE|WORK_FLAG\r\n2015-04-23 15:56:34|0|JP|2002\n}",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-23 15:56:43",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Setting ClientData message calendar01-1.0 with 222769 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "CALENDAR01: 222768 records transformed (4799 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for Z2 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for AM from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for AJ from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for W8 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for NL from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for ES from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for PH from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for CH from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for RU from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for Z1 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for 01 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for P1 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for IT from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for EU from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:39",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for 06 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for AU from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for CS from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for SG from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for SE from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for MX from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for US from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for AT from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for FI from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for DK from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for BE from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for E1 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for E2 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for FR from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for U1 from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for NO from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for CA from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for GB from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for BR from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "Generating calendar definition for JP from 2002-12-15 to 2020-11-22",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:34",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "SAP_TO_E2PR_CALENDAR01 parameters: ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:56:34",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042315562695500009",
+            "message": "TableResolver used to resolve inputs for transformations",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-23 15:55:30",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315552922500002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-23 15:55:30",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315552922500002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:55:29",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315552922500002",
+            "message": "MONITOR_MESSAGES parameters: ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 15:49:32",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315493171000002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 15:49:32",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315493171000002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:49:31",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315493171000002",
+            "message": "MONITOR_MESSAGES parameters: ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 15:44:23",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315442259100002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 15:44:23",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315442259100002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:44:22",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315442259100002",
+            "message": "MONITOR_MESSAGES parameters: ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 15:37:50",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315374924500002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 15:37:50",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315374924500002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 15:37:49",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042315374924500002",
+            "message": "MONITOR_MESSAGES parameters: ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-23 13:43:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "FAILURE executing SAP_TO_E2PR_CALENDAR01",
+            "hasErrorLogs": true,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-23 13:43:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Setting ClientData message caused exception: No equivalent message set up available for message key calendar01-1.0 to be processed using direction SEND. Message: {\n\tname = calendar01.txt\n\tstatus = true\n\tproperties=\n\t\tdataType = calendar01\n\t\tmsgtype = Message\n\t\trequest.hostname = ws-266.corp.e2open.com\n\t\tversion = 1.0\n\texception = null\n\tdata = SNAPSHOT_DATE|DISCONTINUED_FLAG|CALENDAR_NAME|CALENDAR_DATE|WORK_FLAG\r\n2015-04-23 13:43:27|0|JP|1995\n}",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-23 13:43:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Error transforming CALENDAR01: Setting ClientData message caused exception: No equivalent message set up available for message key calendar01-1.0 to be processed using direction SEND. Message: {\n\tname = calendar01.txt\n\tstatus = true\n\tproperties=\n\t\tdataType = calendar01\n\t\tmsgtype = Message\n\t\trequest.hostname = ws-266.corp.e2open.com\n\t\tversion = 1.0\n\texception = null\n\tdata = SNAPSHOT_DATE|DISCONTINUED_FLAG|CALENDAR_NAME|CALENDAR_DATE|WORK_FLAG\r\n2015-04-23 13:43:27|0|JP|1995\n}",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 13:43:38",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Setting ClientData message calendar01-1.0 with 353577 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:33",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "CALENDAR01: 353576 records transformed (6308 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:33",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for Z2 from 2000-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:33",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for AM from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:33",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for AJ from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:32",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for W8 from 2003-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:32",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for NL from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:32",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for ES from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:32",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for PH from 1997-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:32",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for CH from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:32",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for RU from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for Z1 from 2000-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for 01 from 1990-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for P1 from 1997-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for IT from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for EU from 1998-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for 06 from 2001-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for AU from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for CS from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for SG from 1996-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for SE from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for MX from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for US from 1990-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for AT from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for FI from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for DK from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for BE from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for E1 from 1990-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for E2 from 1990-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for FR from 1990-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for U1 from 2003-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for NO from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:31",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for CA from 1990-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:30",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for GB from 1900-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:30",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for BR from 1996-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:30",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "Generating calendar definition for JP from 1995-01-01 to 2020-12-31",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-23 13:43:27",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "admin",
+            "processRunRef": "2015042313423754400009",
+            "message": "TableResolver used to resolve inputs for transformations",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 13:40:27",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042313402738200002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-23 13:40:27",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042313402738200002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-21 10:18:25",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042110182481900002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-21 10:18:25",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042110182481900002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-20 18:52:35",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042018523483600002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-20 18:52:35",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042018523483600002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-20 18:39:16",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042018391630600002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-20 18:39:16",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042018391630600002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-20 17:46:17",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042017461668100002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-20 17:46:17",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015042017461668100002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-19 18:22:53",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041918225316600002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-19 18:22:53",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041918225316600002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 16:55:05",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041716550547000002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 16:55:05",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041716550547000002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 16:47:32",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041716473147400002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 16:47:32",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041716473147400002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 11:04:12",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041711041178000002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 11:04:12",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041711041178000002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 10:55:47",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041710554705500002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 10:55:47",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041710554705500002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-17 10:16:12",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041710161250000002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-17 10:16:12",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041710161250000002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-16 10:01:00",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041610005995500002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-16 10:01:00",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "system",
+            "processRunRef": "2015041610005995500002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-15 18:18:12",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041518181142600002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-15 18:18:12",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041518181142600002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-15 11:52:12",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511521188600002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 11:52:12",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511521188600002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 11:26:38",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511242596000012",
+            "message": "SUCCESS executing LOAD_SAP_BOM",
+            "hasErrorLogs": true,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-15 11:26:38",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511242596000012",
+            "message": "Filtered 4 error rows from source PRODBOM.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-15 11:26:11",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511242596000012",
+            "message": "Records inserted into table BOM",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 11:25:48",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511242596000012",
+            "message": "Read 14417 lines (w/o header) from source PRODBOM.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 11:25:22",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511242596000012",
+            "message": "Reading source PRODBOM.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-15 11:25:20",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511242596000012",
+            "message": "Executing delete statement: DELETE FROM BOM ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 11:25:18",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511242596000012",
+            "message": "Loading data set with pattern PRODBOM\\.TXT into table: PRODBOM.TXT -> BOM with column mapping [(ALT_RANK_ORDER,ALT_RANK_ORDER), (HEADER_ID,HEADER_ID), (ALT_GROUP,ALT_GROUP), (VALID_FROM,VALID_FROM), (ALTBOM_ID,ALTBOM_ID), (NODE_NO,NODE_NO), (ITEM_ID,ITEM_ID), (BASE_QTY,BASE_QTY), (CATEGORY,CATEGORY), (EXTRACT_DATE,EXTRACT_DATE), (PLANT,PLANT), (MATERIAL_NO,MATERIAL_NO), (BASE_UOM,BASE_UOM), (USAGE_PROBABILITY,USAGE_PROBABILITY), (QTY,QTY), (UOM,UOM), (ID,ID), (DISCONTINUED_FLAG,DISCONTINUED_FLAG), (COMPONENT,COMPONENT), (ITEM_NO,ITEM_NO)]",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 11:25:17",
+            "processName": "LOAD_SAP_BOM",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511242596000012",
+            "message": "Column matching strategy between PRODBOM.TXT and BOM: BEST_MATCH Special Character Sensitivity: false Case Sensitivity: false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 11:19:56",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511195601100002",
+            "message": "2 receive queue(s) running: [ws266-AppDH (TechAckCapacity=100 RunnerCapacity=5)] [E2net-Dev (TechAckCapacity=100 RunnerCapacity=5)] ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 11:19:56",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041511195601100002",
+            "message": "MessageRouter started.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 10:34:36",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041510343646300002",
+            "message": "New receive queue created for E2net-Dev. (TechAckCapacity=100 RunnerCapacity=5)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 10:34:36",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041510343646300002",
+            "message": "New receive queue created for ws266-AppDH. (TechAckCapacity=100 RunnerCapacity=5)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 10:09:59",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041510095938200002",
+            "message": "New receive queue created for E2net-Dev. (TechAckCapacity=100 RunnerCapacity=5)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-15 10:09:59",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041510095938200002",
+            "message": "New receive queue created for ws266-AppDH. (TechAckCapacity=100 RunnerCapacity=5)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-15 10:06:56",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041510065567700002",
+            "message": "New receive queue created for ws266-AppDH. (TechAckCapacity=100 RunnerCapacity=5)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 10:06:56",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041510065567700002",
+            "message": "New receive queue created for E2net-Dev. (TechAckCapacity=100 RunnerCapacity=5)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 10:04:09",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041510040903500002",
+            "message": "New receive queue created for ws266-AppDH. (TechAckCapacity=100 RunnerCapacity=5)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-15 10:04:09",
+            "processName": "MONITOR_MESSAGES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041510040903500002",
+            "message": "New receive queue created for E2net-Dev. (TechAckCapacity=100 RunnerCapacity=5)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-14 17:55:51",
+            "processName": "EXTRACT_E2PR_DATA",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532967600099",
+            "message": "FAILURE executing EXTRACT_E2PR_DATA",
+            "hasErrorLogs": true,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-14 17:55:51",
+            "processName": "EXTRACT_E2PR_DATA",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532967600099",
+            "message": "Error returning functional acknowledgement to originator endpoint: DataHubException Message is not marked as functional acknowledgment!",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "ERROR",
+            "date": "2015-04-14 17:55:51",
+            "processName": "EXTRACT_E2PR_DATA",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532967600099",
+            "message": "Error sending OutMessage: Exception sending message [dtgmd-1.0,TxID=629f54e-14cb8a16cd7,CID=2015041417515176900031] to partner ws266-AppDH endpoint E2PR-DH: ConnectException Connection refused: connect",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:29",
+            "processName": "EXTRACT_E2PR_DATA",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532967600099",
+            "message": "Setting ClientData collection with 15 attachments ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:29",
+            "processName": "SAP_TO_E2PR_CAPAUSAGE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532245300096",
+            "message": "CAPAUSAGE01: 7303 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:29",
+            "processName": "SAP_TO_E2PR_CAPAUSAGE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532245300096",
+            "message": "SUCCESS executing SAP_TO_E2PR_CAPAUSAGE01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:29",
+            "processName": "SAP_TO_E2PR_CAPAUSAGE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532245300096",
+            "message": "Setting ClientData message capausage01-1.0 with 7304 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:29",
+            "processName": "SAP_TO_E2PR_CAPAUSAGE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532245300096",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:53:29",
+            "processName": "SAP_TO_E2PR_CAPAUSAGE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417532245300096",
+            "message": "CAPAUSAGE01: 7303 records transformed (6940 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:22",
+            "processName": "SAP_TO_E2PR_PART_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531979600093",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:22",
+            "processName": "SAP_TO_E2PR_PART_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531979600093",
+            "message": "SUCCESS executing SAP_TO_E2PR_PART_DEPOT01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:22",
+            "processName": "SAP_TO_E2PR_PART_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531979600093",
+            "message": "PART_DEPOT01: 16766 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:22",
+            "processName": "SAP_TO_E2PR_PART_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531979600093",
+            "message": "Setting ClientData message part_depot01-1.0 with 16767 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:53:21",
+            "processName": "SAP_TO_E2PR_PART_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531979600093",
+            "message": "PART_DEPOT01: 16766 records transformed (1906 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:19",
+            "processName": "SAP_TO_E2PR_INV_CHANNEL01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531770800090",
+            "message": "Setting ClientData message inv_channel01-1.0 with 1250 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:19",
+            "processName": "SAP_TO_E2PR_INV_CHANNEL01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531770800090",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:19",
+            "processName": "SAP_TO_E2PR_INV_CHANNEL01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531770800090",
+            "message": "SUCCESS executing SAP_TO_E2PR_INV_CHANNEL01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:19",
+            "processName": "SAP_TO_E2PR_INV_CHANNEL01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531770800090",
+            "message": "INV_CHANNEL01: 1249 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:53:19",
+            "processName": "SAP_TO_E2PR_INV_CHANNEL01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531770800090",
+            "message": "INV_CHANNEL01: 1249 records transformed (1951 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:17",
+            "processName": "SAP_TO_E2PR_CUSTOMER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531670600087",
+            "message": "Setting ClientData message customer01-1.0 with 7948 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:17",
+            "processName": "SAP_TO_E2PR_CUSTOMER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531670600087",
+            "message": "CUSTOMER01: 7947 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:17",
+            "processName": "SAP_TO_E2PR_CUSTOMER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531670600087",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:17",
+            "processName": "SAP_TO_E2PR_CUSTOMER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531670600087",
+            "message": "SUCCESS executing SAP_TO_E2PR_CUSTOMER01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:53:17",
+            "processName": "SAP_TO_E2PR_CUSTOMER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531670600087",
+            "message": "CUSTOMER01: 7947 records transformed (832 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:16",
+            "processName": "SAP_TO_E2PR_PROD01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531022900084",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:16",
+            "processName": "SAP_TO_E2PR_PROD01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531022900084",
+            "message": "PROD01: 1502 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:16",
+            "processName": "SAP_TO_E2PR_PROD01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531022900084",
+            "message": "SUCCESS executing SAP_TO_E2PR_PROD01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:16",
+            "processName": "SAP_TO_E2PR_PROD01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531022900084",
+            "message": "Setting ClientData message prod01-1.0 with 1503 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:53:16",
+            "processName": "SAP_TO_E2PR_PROD01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417531022900084",
+            "message": "PROD01: 1502 records transformed (6309 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:10",
+            "processName": "SAP_TO_E2PR_BOM02",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530347000081",
+            "message": "SUCCESS executing SAP_TO_E2PR_BOM02",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:10",
+            "processName": "SAP_TO_E2PR_BOM02",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530347000081",
+            "message": "Setting ClientData message bom02-1.0 with 5820 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:53:10",
+            "processName": "SAP_TO_E2PR_BOM02",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530347000081",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:10",
+            "processName": "SAP_TO_E2PR_BOM02",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530347000081",
+            "message": "BOM02: 5819 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:53:09",
+            "processName": "SAP_TO_E2PR_BOM02",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530347000081",
+            "message": "BOM02: 5819 records transformed (6415 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:03",
+            "processName": "SAP_TO_E2PR_SC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530127700078",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:03",
+            "processName": "SAP_TO_E2PR_SC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530127700078",
+            "message": "SUCCESS executing SAP_TO_E2PR_SC01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:03",
+            "processName": "SAP_TO_E2PR_SC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530127700078",
+            "message": "SC01: 6 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:03",
+            "processName": "SAP_TO_E2PR_SC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530127700078",
+            "message": "Setting ClientData message sc01-1.0 with 7 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:53:03",
+            "processName": "SAP_TO_E2PR_SC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417530127700078",
+            "message": "SC01: 6 records transformed (2147 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:01",
+            "processName": "SAP_TO_E2PR_PARTMSTR10",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525572900075",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:01",
+            "processName": "SAP_TO_E2PR_PARTMSTR10",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525572900075",
+            "message": "SUCCESS executing SAP_TO_E2PR_PARTMSTR10",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:01",
+            "processName": "SAP_TO_E2PR_PARTMSTR10",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525572900075",
+            "message": "PARTMSTR10: 12020 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:53:01",
+            "processName": "SAP_TO_E2PR_PARTMSTR10",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525572900075",
+            "message": "Setting ClientData message partmstr10-1.0 with 12021 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:53:00",
+            "processName": "SAP_TO_E2PR_PARTMSTR10",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525572900075",
+            "message": "PARTMSTR10: 12020 records transformed (5186 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:55",
+            "processName": "SAP_TO_E2PR_PROCESS_SHARE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525077600072",
+            "message": "Setting ClientData message process_share01-1.0 with 15 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:55",
+            "processName": "SAP_TO_E2PR_PROCESS_SHARE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525077600072",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:55",
+            "processName": "SAP_TO_E2PR_PROCESS_SHARE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525077600072",
+            "message": "PROCESS_SHARE01: 14 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:55",
+            "processName": "SAP_TO_E2PR_PROCESS_SHARE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525077600072",
+            "message": "SUCCESS executing SAP_TO_E2PR_PROCESS_SHARE01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:55",
+            "processName": "SAP_TO_E2PR_PROCESS_SHARE01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525077600072",
+            "message": "PROCESS_SHARE01: 14 records transformed (4903 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_SUPPLIER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525052700069",
+            "message": "SUPPLIER01: 1844 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_SUPPLIER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525052700069",
+            "message": "SUCCESS executing SAP_TO_E2PR_SUPPLIER01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_SUPPLIER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525052700069",
+            "message": "Setting ClientData message supplier01-1.0 with 1845 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_SUPPLIER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525052700069",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_SUPPLIER01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417525052700069",
+            "message": "SUPPLIER01: 1844 records transformed (187 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_PROC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524758500066",
+            "message": "SUCCESS executing SAP_TO_E2PR_PROC01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "WARN",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_PROC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524758500066",
+            "message": "Setting ClientData message proc01-1.0 with 1894 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_PROC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524758500066",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_PROC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524758500066",
+            "message": "PROC01: 1893 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:50",
+            "processName": "SAP_TO_E2PR_PROC01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524758500066",
+            "message": "PROC01: 1893 records transformed (2761 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:47",
+            "processName": "SAP_TO_E2PR_RESCAPA01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524680500063",
+            "message": "SUCCESS executing SAP_TO_E2PR_RESCAPA01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:47",
+            "processName": "SAP_TO_E2PR_RESCAPA01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524680500063",
+            "message": "Setting ClientData message rescapa01-1.0 with 4418 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:47",
+            "processName": "SAP_TO_E2PR_RESCAPA01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524680500063",
+            "message": "RESCAPA01: 4417 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:47",
+            "processName": "SAP_TO_E2PR_RESCAPA01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524680500063",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:47",
+            "processName": "SAP_TO_E2PR_RESCAPA01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417524680500063",
+            "message": "RESCAPA01: 4417 records transformed (609 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:46",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523527500060",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:46",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523527500060",
+            "message": "CALENDAR01: 353576 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:46",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523527500060",
+            "message": "SUCCESS executing SAP_TO_E2PR_CALENDAR01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:46",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523527500060",
+            "message": "Setting ClientData message calendar01-1.0 with 353577 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:40",
+            "processName": "SAP_TO_E2PR_CALENDAR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523527500060",
+            "message": "CALENDAR01: 353576 records transformed (5396 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:35",
+            "processName": "SAP_TO_E2PR_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523498300057",
+            "message": "DEPOT01: 146 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:35",
+            "processName": "SAP_TO_E2PR_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523498300057",
+            "message": "SUCCESS executing SAP_TO_E2PR_DEPOT01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:35",
+            "processName": "SAP_TO_E2PR_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523498300057",
+            "message": "Setting ClientData message depot01-1.0 with 147 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:35",
+            "processName": "SAP_TO_E2PR_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523498300057",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:35",
+            "processName": "SAP_TO_E2PR_DEPOT01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523498300057",
+            "message": "DEPOT01: 146 records transformed (35 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:34",
+            "processName": "SAP_TO_E2PR_RESMSTR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523333300054",
+            "message": "Setting ClientData message resmstr01-1.0 with 3478 rows ...",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:34",
+            "processName": "SAP_TO_E2PR_RESMSTR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523333300054",
+            "message": "RESMSTR01: 3477 records transformed",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:34",
+            "processName": "SAP_TO_E2PR_RESMSTR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523333300054",
+            "message": "SUCCESS executing SAP_TO_E2PR_RESMSTR01",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:34",
+            "processName": "SAP_TO_E2PR_RESMSTR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523333300054",
+            "message": "Setting ClientData message done.",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:34",
+            "processName": "SAP_TO_E2PR_RESMSTR01",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523333300054",
+            "message": "RESMSTR01: 3477 records transformed (805 ms)",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:33",
+            "processName": "LOAD_SAP_MD",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417520937600009",
+            "message": "SUCCESS executing LOAD_SAP_MD",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:33",
+            "processName": "LOAD_SAP_WORK_CENTER",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523229200051",
+            "message": "Records inserted into table WORK_CENTER",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:33",
+            "processName": "LOAD_SAP_WORK_CENTER",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523229200051",
+            "message": "SUCCESS executing LOAD_SAP_WORK_CENTER",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:33",
+            "processName": "LOAD_SAP_WORK_CENTER",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523229200051",
+            "message": "Read 3593 lines (w/o header) from source WOCE.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:33",
+            "processName": "LOAD_SAP_WORK_CENTER",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523229200051",
+            "message": "Reading source WOCE.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:33",
+            "processName": "LOAD_SAP_WORK_CENTER",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523229200051",
+            "message": "Executing delete statement: DELETE FROM WORK_CENTER ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_WORK_CENTER",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523229200051",
+            "message": "Loading data set with pattern WOCE\\.TXT into table: WOCE.TXT -> WORK_CENTER with column mapping [(POOLED_CAPACITY,POOLED_CAPACITY), (CAPACITY_CATEGORY,CAPACITY_CATEGORY), (PLANT,PLANT), (EXTRACT_DATE,EXTRACT_DATE), (CALC_CAPACITY,CALC_CAPACITY), (CAPACITY_NAME,CAPACITY_NAME), (WORK_CENTER_ID,WORK_CENTER_ID), (DESCRIPTION,DESCRIPTION), (DISCONTINUED_FLAG,DISCONTINUED_FLAG), (RESOURCE_ID,RESOURCE_ID), (FINITE_SCHEDULING,FINITE_SCHEDULING)]",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_WORK_CENTER",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523229200051",
+            "message": "Column matching strategy between WOCE.TXT and WORK_CENTER: BEST_MATCH Special Character Sensitivity: false Case Sensitivity: false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_VENDOR",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523141800048",
+            "message": "Records inserted into table VENDOR",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_VENDOR",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523141800048",
+            "message": "SUCCESS executing LOAD_SAP_VENDOR",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_VENDOR",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523141800048",
+            "message": "Read 1845 lines (w/o header) from source VENDOR.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_VENDOR",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523141800048",
+            "message": "Reading source VENDOR.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_VENDOR",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523141800048",
+            "message": "Executing delete statement: DELETE FROM VENDOR ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_VENDOR",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523141800048",
+            "message": "Loading data set with pattern VENDOR\\.TXT into table: VENDOR.TXT -> VENDOR with column mapping [(EXTRACT_DATE,EXTRACT_DATE), (DESCRIPTION,DESCRIPTION), (DISCONTINUED_FLAG,DISCONTINUED_FLAG), (VENDOR,VENDOR)]",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:32",
+            "processName": "LOAD_SAP_VENDOR",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523141800048",
+            "message": "Column matching strategy between VENDOR.TXT and VENDOR: BEST_MATCH Special Character Sensitivity: false Case Sensitivity: false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:31",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523064000045",
+            "message": "Records inserted into table SRULES",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:31",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523064000045",
+            "message": "SUCCESS executing LOAD_SAP_SRULES",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:31",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523064000045",
+            "message": "Read 336 lines (w/o header) from source SRULES.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:31",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523064000045",
+            "message": "Executing delete statement: DELETE FROM SRULES ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:31",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523064000045",
+            "message": "Reading source SRULES.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:31",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523064000045",
+            "message": "Column matching strategy between SRULES.TXT and SRULES: BEST_MATCH Special Character Sensitivity: false Case Sensitivity: false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:31",
+            "processName": "LOAD_SAP_SRULES",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417523064000045",
+            "message": "Loading data set with pattern SRULES\\.TXT into table: SRULES.TXT -> SRULES with column mapping [(EXTRACT_DATE,EXTRACT_DATE), (TO_DATE,TO_DATE), (WORKDAY_FLAG,WORKDAY_FLAG), (CALENDAR_ID,CALENDAR_ID), (DISCONTINUED_FLAG,DISCONTINUED_FLAG), (FROM_DATE,FROM_DATE)]",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:30",
+            "processName": "LOAD_SAP_ROUTING",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522910700042",
+            "message": "Records inserted into table ROUTING",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:30",
+            "processName": "LOAD_SAP_ROUTING",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522910700042",
+            "message": "SUCCESS executing LOAD_SAP_ROUTING",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:30",
+            "processName": "LOAD_SAP_ROUTING",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522910700042",
+            "message": "Read 7588 lines (w/o header) from source ROUT.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROUTING",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522910700042",
+            "message": "Reading source ROUT.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROUTING",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522910700042",
+            "message": "Executing delete statement: DELETE FROM ROUTING ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROUTING",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522910700042",
+            "message": "Column matching strategy between ROUT.TXT and ROUTING: BEST_MATCH Special Character Sensitivity: false Case Sensitivity: false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROUTING",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522910700042",
+            "message": "Loading data set with pattern ROUT\\.TXT into table: ROUT.TXT -> ROUTING with column mapping [(CALC_LABOR_COEFF,CALC_LABOR_COEFF), (CALC_MACHINE_COEFF,CALC_MACHINE_COEFF), (GROUP_COUNTER,GROUP_COUNTER), (PLANT,PLANT), (EXTRACT_DATE,EXTRACT_DATE), (MATERIAL_NO,MATERIAL_NO), (TASK_LIST_GROUP,TASK_LIST_GROUP), (ID,ID), (DISCONTINUED_FLAG,DISCONTINUED_FLAG)]",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522830900039",
+            "message": "Records inserted into table ROC",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522830900039",
+            "message": "SUCCESS executing LOAD_SAP_ROC",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522830900039",
+            "message": "Read 271 lines (w/o header) from source ROC.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522830900039",
+            "message": "Reading source ROC.TXT",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522830900039",
+            "message": "Executing delete statement: DELETE FROM ROC ",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522830900039",
+            "message": "Loading data set with pattern ROC\\.TXT into table: ROC.TXT -> ROC with column mapping [(CALC_LCL,CALC_LCL), (PLANT,PLANT), (EXTRACT_DATE,EXTRACT_DATE), (PROFILE,PROFILE), (DISCONTINUED_FLAG,DISCONTINUED_FLAG), (CALC_DOS,CALC_DOS), (CALC_UCL,CALC_UCL)]",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:29",
+            "processName": "LOAD_SAP_ROC",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522830900039",
+            "message": "Column matching strategy between ROC.TXT and ROC: BEST_MATCH Special Character Sensitivity: false Case Sensitivity: false",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "INFO",
+            "date": "2015-04-14 17:52:28",
+            "processName": "LOAD_SAP_QUOTA",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522753300036",
+            "message": "SUCCESS executing LOAD_SAP_QUOTA",
+            "hasErrorLogs": false,
+            "errorLog": null
+        },
+        {
+            "logLevel": "DEBUG",
+            "date": "2015-04-14 17:52:28",
+            "processName": "LOAD_SAP_QUOTA",
+            "userName": "SYSTEM",
+            "processRunRef": "2015041417522753300036",
+            "message": "Records inserted into table QUOTA",
+            "hasErrorLogs": false,
+            "errorLog": null
+        }
+    ],
+    "totalCount": 300
+}

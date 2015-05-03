@@ -62,7 +62,7 @@ describe('Controller: GridCtrl', function () {
 
 
   it('should initialize default table variables', function(){
-      var watchers = ['userNameFilter', 'errorLevelFilter', 'processRunRefFilter', 'processNameFilter', 'messageFilter', 'dateFilterStart', 'dateFilterEnd'],
+      var watchers = ['userNameFilter', 'errorLevelFilter', 'processRunRefFilter', 'processNameFilter', 'messageFilter', 'dateFilterStart', 'dateFilterEnd', 'logEntries'],
           errorLevels = [{value : 'INFO', icon: 'glyphicon-info-sign'},
             {value : 'DEBUG', icon : 'glyphicon-ok-sign'},
             {value : 'ERROR', icon : 'glyphicon-remove-sign'},
